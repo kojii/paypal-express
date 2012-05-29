@@ -18,7 +18,8 @@ module Paypal
           :landing_page  => :LANDINGPAGE,
           :email         => :EMAIL,
           :brand         => :BRANDNAME,
-          :locale        => :LOCALECODE
+          :locale        => :LOCALECODE,
+          :page_style    => :PAGESTYLE
         }.each do |option_key, param_key|
           params[param_key] = options[option_key] if options[option_key]
         end
